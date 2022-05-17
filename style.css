@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
+#body{
+    background-color: black;
+    color: papayawhip;
+}
+#baner{
+    height: 50px;
+    text-align: center;
+    background-color: rosybrown;
+    font-size: 25px;
+}
+#main{ 
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+}
+#min{
+    height: 200px;
+    text-align: center;
+    width: 100%;
+}
+.foto{
+    padding: 5px;
+    height: 340px;
+}
+.miniatura{
+    height: 190px;
+    padding: 5px;
+}
+.miniatura:hover{
+    border: 1px solid white;
+}
+#styl{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+table{
+    width: 100%;
+}

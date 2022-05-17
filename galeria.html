@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body id="body">
+    <div id="galeria">
+        <div id="styl">
+            <table>
+                <tr>
+                    <td>WYBIERZ KOLORYSTYKĘ
+                        <button id="kolor1" onclick="change_kolor1()">NIEBIESKA</button>
+                        <button id="kolor2" onclick="change_kolor2()">FIOLETOWA</button>
+                        <button id="kolor3" onclick="change_kolor3()">POMARAŃCZOWA</button>
+                    </td>
+                    <td>PODAJ ROZMIAR CZCIONKI(w procentach)
+                        <input type="text" id="czcionka" onchange="change_size()">
+
+                    </td>
+                    <td>CZY RYSUNEK MA MIEĆ RAMKĘ?
+                        <input type="checkbox" id="border" onchange="change_border()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="baner">
+            <h2>Galeria ciekawych miejsc</h2>
+        </div>
+        <div id="main">
+            <img src="zakhyntos.jpg" id="wybrane" class="foto">
+        </div>
+        <div id="min">
+            <h3>PRZEGLĄDAJ ZDJĘCIA</h3>
+            <img src="barcelona.jpg" id="barcelona" class="miniatura" onclick="gallery('barcelona')">
+            <img src="londyn.jpg" id="londyn" class="miniatura" onclick="gallery('londyn')">
+            <img src="zakhyntos.jpg" id="zakhytos" class="miniatura" onclick="gallery('zakhyntos')">
+            <img src="malta.jpg" id="malta" class="miniatura" onclick="gallery('malta')">
+            <img src="mediolan.jpg" id="mediolan" class="miniatura" onclick="gallery('mediolan')">
+            <img src="wenecja.jpg" id="wenecja" class="miniatura" onclick="gallery('wenecja')">
+        </div>
+    </div>
+</body>
+</html>
